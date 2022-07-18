@@ -41,8 +41,9 @@ console.log(makeid(8));
 
 // 3
 // Write a JavaScript program to pass a 'JavaScript function' as parameter.
-function abc() {
+function abc(str) {
   //write your code here
+  console.log(str);
 }
 
-abc();
+abc("JavaScript function");
