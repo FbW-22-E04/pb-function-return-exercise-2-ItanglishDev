@@ -26,6 +26,15 @@ console.log(vowel_count("The quick brown fox"));
 //2
 // Write a JavaScript function that generates a string id (specified length) of random characters.
 function makeid(l) {
+  const characterList =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+  let stringId = "";
+  for (let i = 0; i < l; i++) {
+    stringId += characterList.charAt(
+      Math.floor(Math.random() * characterList.length)
+    );
+  }
+  return stringId;
   //write your code here
 }
 console.log(makeid(8));
